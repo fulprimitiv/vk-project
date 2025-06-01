@@ -1,0 +1,17 @@
+{
+	"name": "vk-project",
+	"version": "1.0.0",
+	"description": "VK Test Project",
+	"scripts": {
+		"dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+		"backend": "cd backend-api && npm start",
+		"frontend": "cd frontend-app && npm start",
+		"build": "cd frontend-app && npm run build",
+		"test": "cd frontend-app && npm test",
+		"test:coverage": "cd frontend-app && npm run test:coverage",
+		"install:all": "npm install && cd backend-api && npm install && cd ../frontend-app && npm install"
+	},
+	"devDependencies": {
+		"concurrently": "^8.2.2"
+	}
+}
